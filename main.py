@@ -57,9 +57,9 @@ def main():
 
 
 
-            print("\nMensagem original: ", texto)
-            print("Mensagem criptograda: ", texto_crip)
-            print("Mensagem descriptograda: ",texto_descrip)
+            print("\nMensagem original:", texto)
+            print("Mensagem criptografada:", texto_crip)
+            print("Mensagem descriptografada:",texto_descrip)
             input("\nPressione Enter para continuar...")
 
         elif questao == "2":
