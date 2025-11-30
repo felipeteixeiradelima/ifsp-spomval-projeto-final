@@ -1,6 +1,7 @@
 import os
 import sys
 from typing import List
+from core.hill import hill
 from core.hill.hill import *
 from core.matrizes.matrizes import *
 
@@ -44,6 +45,8 @@ def main():
 
             valores = [float(v) for v in text.split()]
             matriz = [valores[i*ordem:(i+1)*ordem] for i in range(ordem)]
+
+            hill.modulo = modulo
 
             matriz2=converter_para_numpy(matriz)
             obter_inverso_modular(matriz2, modulo)
